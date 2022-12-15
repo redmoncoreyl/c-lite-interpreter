@@ -14,6 +14,8 @@ Then, to run a C-Lite program use the following command:
 [executable] [c_lite_program_file]
 ```
 
+Two sample programs are given as part of the repository: `./sample-programs/guess.clite` and `demo.clite`. Try running them to get a feel for the type of programs you can make!
+
 Note, there is no syntax error detection. The interpreter
 assumes the program is syntactically correct.
 
