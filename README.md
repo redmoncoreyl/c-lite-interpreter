@@ -14,7 +14,11 @@ Then, to run a C-Lite program use the following command:
 [executable] [c_lite_program_file]
 ```
 
-Two sample programs are given as part of the repository: `./sample-programs/demo.clite` and `sample-programs/numberGuesser.clite`. Try running them and inspecting their source code to get a feel for the type of programs you can make!
+Two sample programs are given as part of the repository:
+- `./sample-programs/demo.clite`
+- `./sample-programs/numberGuesser.clite`.
+
+Try running them and inspecting their source code to get a feel for the type of programs you can make!
 
 ## Supported features
 C-Lite supports the following features:
