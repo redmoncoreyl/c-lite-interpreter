@@ -67,6 +67,23 @@ out value
 exit
 ```
 
+### Printing output
+You have already seen printing output, but you should know, there are only two usages of `out`. Printing strings and priting a single variable:
+
+```
+value = 5
+out "The value is: "
+out value
+exit
+```
+
+When printing a string, you may use a single new line at the end of the string:
+
+```
+out "After this is a new line\n"
+exit
+```
+
 ## Currently not supported
 Here are some of the feature that are currently not supported:
 
