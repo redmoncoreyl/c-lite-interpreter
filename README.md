@@ -36,9 +36,10 @@ You can print out messages using the `out` keyword:
 ```
 out "Hello world\n"
 exit
+
 ```
 
-A valid C-Lite program must end with the `exit` command.
+A valid C-Lite program must end with the `exit` command and a blank line.
 
 ### Variables
 You can store integer data in variables:
@@ -47,6 +48,7 @@ You can store integer data in variables:
 variable = 5
 out variable
 exit
+
 ```
 
 To store a value in a variable, make sure the command matches this regex:
@@ -65,6 +67,7 @@ in value
 out "Your value is: "
 out value
 exit
+
 ```
 
 ### Printing output
@@ -75,6 +78,7 @@ value = 5
 out "The value is: "
 out value
 exit
+
 ```
 
 When printing a string, you may use a single new line at the end of the string:
@@ -82,6 +86,7 @@ When printing a string, you may use a single new line at the end of the string:
 ```
 out "After this is a new line\n"
 exit
+
 ```
 
 ### Arithmetic operations
@@ -91,11 +96,50 @@ You can store the result of an arithmetic operation in a variable like this:
 result = 5 + 1
 out result
 exit
+
 ```
 
 There are five arithmetic operations: +, -, *, /, %.
 
 Be sure to use the correct syntax. The only way to use arithmetic operations is with five space-separated tokens. The first token is a variable, the second token is an equals, the third is a number or variable, the fourth is one of the five operations, and the fifth is a number or variable.
+
+### Control structures: if and while
+You can control the flow of the program using `if`:
+
+```
+age = 0
+out "Enter your age: "
+in age
+if age < 21
+  out "You aren't old enough to drink :("
+end
+if age >= 21
+  out "It's party time! :)"
+end
+exit
+
+```
+
+Sections inside `if` are terminated with `end`.
+
+You can loop using `while`:
+
+```
+a = 1
+while a < 20
+  b = a % 2
+  if b == 1
+    out "odd: "
+    out a
+    out "\n"
+  end
+  a = a + 1
+end
+exit
+
+```
+
+Sections inside `while` are terminated with `end`. As you can see in this example, nested `if` and `while` are also supported.
 
 ## Currently not supported
 Here are some of the feature that are currently not supported:
