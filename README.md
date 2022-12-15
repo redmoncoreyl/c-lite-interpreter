@@ -14,26 +14,23 @@ Then, to run a C-Lite program use the following command:
 [executable] [c_lite_program_file]
 ```
 
-Two sample programs are given as part of the repository: `./sample-programs/demo.clite` and `sample-programs/numberGuesser.clite`. Try running them to get a feel for the type of programs you can make!
+Two sample programs are given as part of the repository: `./sample-programs/demo.clite` and `sample-programs/numberGuesser.clite`. Try running them and inspecting their source code to get a feel for the type of programs you can make!
+
+## Supported features
+C-Lite supports the following features:
+- one data type: integer
+- any variable name starting with `[a-zA-Z]`
+- receiving input with the `in` keyword
+- printing strings with `out` keyword
+- `if` and `while` control structures
+- five arithmetic operations (+ - * / %)
+- six conditionals (==, !=, <, >, <=, >=)
 
 Note, there is no syntax error detection. The interpreter
 assumes the program is syntactically correct.
 
-The syntax is similar to C. The only variable data type is int.
-Lines are terminated with a new line, not ";"
-
 Control structures if and while are terminated with "end"
 keyword. Programs are terminated with the "exit" keyword.
-
-Supported structures:
-  receiving input with "in" keyword
-  "if" and "while"
-  any number of lines
-  any variable name starting with a character
-  printing strings with "out" keyword with at most one \n
-  five arithmetic operations (+ - * / %)
-  six conditionals (==, !=, <, >, <=, >=)
-  white space is ignored
 
 Examples of the syntax are given in test.clite and guess.clite.
 
