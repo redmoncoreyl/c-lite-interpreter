@@ -1,3 +1,6 @@
+# C-Lite Interpreter
+This project implements an interpreter for an invented language called C-Lite. An interpreter reads a program line by line and executes the instruction (as opposed to a comiler which translates a program into instructions which a computer can more quickly process).
+
 Compile: g++ interpreter.cpp -o interpret
 
 Run: ./interpret <c-lite file>
