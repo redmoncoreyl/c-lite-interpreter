@@ -26,8 +26,8 @@ C-Lite supports the following features:
 - any variable name starting with `[a-zA-Z]`
 - receiving input with the `in` keyword
 - printing output with `out` keyword
-- `if` and `while` control structures
 - five arithmetic operations (+ - * / %)
+- `if` and `while` control structures
 - six conditionals (==, !=, <, >, <=, >=)
 
 ### Hello world program
@@ -83,6 +83,19 @@ When printing a string, you may use a single new line at the end of the string:
 out "After this is a new line\n"
 exit
 ```
+
+### Arithmetic operations
+You can store the result of an arithmetic operation in a variable like this:
+
+```
+result = 5 + 1
+out result
+exit
+```
+
+There are five arithmetic operations: +, -, *, /, %.
+
+Be sure to use the correct syntax. The only way to use arithmetic operations is with five space-separated tokens. The first token is a variable, the second token is an equals, the third is a number or variable, the fourth is one of the five operations, and the fifth is a number or variable.
 
 ## Currently not supported
 Here are some of the feature that are currently not supported:
