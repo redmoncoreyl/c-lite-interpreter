@@ -141,22 +141,28 @@ exit
 
 Sections inside `while` are terminated with `end`. As you can see in this example, nested `if` and `while` are also supported.
 
+### Conditionals
+Six conditionals are supported: ==, !=, <, >, <=, >=. They are only supported in the condition section of `if` and `while`. Make sure the conditional operator is surrounded by spaces on either side.
+
 ## Currently not supported
 Here are some of the feature that are currently not supported:
+- for loops
+- comments
+- syntax error detection
+- logical operators &, |, and ^
+- new line characters arbitrarily located within print strings
+- multiple data types
+- complex expressions with more than one operator
 
-Note, there is no syntax error detection. The interpreter
-assumes the program is syntactically correct.
+## Sample programs
+Two sample programs are given as part of the repository:
+- `./sample-programs/demo.clite`
+- `./sample-programs/numberGuesser.clite`.
 
-Control structures if and while are terminated with "end"
-keyword. Programs are terminated with the "exit" keyword.
+`demo.clite`: comprised of four demonstrative sections:
+- line  1: Fibonacci section - demonstrates while
+- line 17: Division section - demonstrates input
+- line 28: Odd section - shows % and "if" inside of while
+- line 41: Multiplication section - demonstrates nested while
 
-Examples of the syntax are given in test.clite and guess.clite.
-
-test.clite: comprised of four demonstrative sections
-  line  1: Fibonacci section - demonstrates while
-  line 17: Division section - demonstrates input
-  line 28: Odd section - shows % and "if" inside of while
-  line 41: Multiplication section - demonstrates nested while
-
-guess.clite: real world program example. guesses a users
-  positive number using exponentiation.
+`guess.clite`: real world program example. guesses a users positive number using exponentiation.
