@@ -25,7 +25,7 @@ C-Lite supports the following features:
 - one data type: integer
 - any variable name starting with `[a-zA-Z]`
 - receiving input with the `in` keyword
-- printing strings with `out` keyword
+- printing output with `out` keyword
 - `if` and `while` control structures
 - five arithmetic operations (+ - * / %)
 - six conditionals (==, !=, <, >, <=, >=)
@@ -54,6 +54,18 @@ To store a value in a variable, make sure the command matches this regex:
 [a-zA-Z][a-zA-Z0-9]+ = [1-9][0-9]+
 ```
 More specifically, the equals sign must be surrounded by spaces and the variable must start with a letter.
+
+### Receiving input
+You can receive input from the user using the `in` keyword:
+
+```
+value = 0
+out "Input your value: "
+in value
+out "Your value is: "
+out value
+exit
+```
 
 ## Currently not supported
 Here are some of the feature that are currently not supported:
