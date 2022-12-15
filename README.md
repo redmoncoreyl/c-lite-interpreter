@@ -30,6 +30,34 @@ C-Lite supports the following features:
 - five arithmetic operations (+ - * / %)
 - six conditionals (==, !=, <, >, <=, >=)
 
+### Hello world program
+You can print out messages using the `out` keyword:
+
+```
+out "Hello world\n"
+exit
+```
+
+A valid C-Lite program must end with the `exit` command.
+
+### Variables
+You can store integer data in variables:
+
+```
+variable = 5
+out variable
+exit
+```
+
+To store a value in a variable, make sure the command matches this regex:
+```
+[a-zA-Z][a-zA-Z0-9]+ = [1-9][0-9]+
+```
+More specifically, the equals sign must be surrounded by spaces and the variable must start with a letter.
+
+## Currently not supported
+Here are some of the feature that are currently not supported:
+
 Note, there is no syntax error detection. The interpreter
 assumes the program is syntactically correct.
 
